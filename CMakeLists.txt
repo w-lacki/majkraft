@@ -18,7 +18,7 @@ add_subdirectory(external/cglm)
 add_library(stb INTERFACE)
 target_include_directories(stb INTERFACE external/stb)
 
-file(GLOB_RECURSE SRC_FILES src/*.c)
+file(GLOB_RECURSE SRC_FILES src/*.c src/*.h)
 add_executable(majkraft ${SRC_FILES})
 
 target_link_libraries(majkraft PRIVATE
